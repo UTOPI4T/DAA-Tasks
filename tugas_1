@@ -90,3 +90,5 @@ jari-jari = diameter/2
 tinggi = 4
 volume = 1/3*3,14*jari-jari*jari-jari*tinggi.
 write(volume)
+
+# Algoritma & Pseudocode #
