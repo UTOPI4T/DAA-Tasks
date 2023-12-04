@@ -8,8 +8,8 @@ G.add_nodes_from(vertices)
 G.add_edges_from(edges)
 pos = nx.spring_layout(G)
 
-nx.draw_networkx_nodes(G, pos, nodelist=[1, 4, 3, 8, 9], label=True, node_color='w', node_size=1300, edgecolors='black', linewidths=2)
-nx.draw_networkx_nodes(G, pos, nodelist=[2, 5, 6, 7, 10], label=True, node_color='w', node_size=1300, edgecolors='black', linewidths=2)
+nx.draw_networkx_nodes(G, pos, nodelist=[1, 4, 5, 7, 10], label=True, node_color='r', node_size=1300, edgecolors='black', linewidths=2)
+nx.draw_networkx_nodes(G, pos, nodelist=[2, 3, 6, 8, 9], label=True, node_color='g', node_size=1300, edgecolors='black', linewidths=2)
 nx.draw_networkx_edges(G, pos, edges, width=2, alpha=1, edge_color='black')
 
 labels = {}
@@ -38,8 +38,8 @@ G.add_nodes_from(vertices)
 G.add_edges_from(edges)
 pos = nx.spring_layout(G)
 
-nx.draw_networkx_nodes(G, pos, nodelist=[5, 3], label=True, node_color='w', node_size=1000, edgecolors='black', linewidths=3)
-nx.draw_networkx_nodes(G, pos, nodelist=[1, 4, 8, 9, 2, 6, 7, 10, 11,12,13], label=True, node_color='w', node_size= 1000, edgecolors='black', linewidths=2)
+nx.draw_networkx_nodes(G, pos, nodelist=[1, 2, 3, 10, 11, 12], label=True, node_color='r', node_size=1000, edgecolors='black', linewidths=2)
+nx.draw_networkx_nodes(G, pos, nodelist=[4, 5, 6, 7, 8, 9, 13], label=True, node_color='g', node_size= 1000, edgecolors='black', linewidths=2)
 nx.draw_networkx_edges(G, pos, edges, width=2, alpha=1, edge_color='black')
 
 labels = {}
@@ -60,3 +60,4 @@ labels[13] = r'13 NF'
 nx.draw_networkx_labels(G, pos, labels, font_size=10)
 
 plt.show()
+
