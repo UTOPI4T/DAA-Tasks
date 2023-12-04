@@ -1,3 +1,4 @@
+# tugas 13
 def bfs(graph, start):
     visited = []
     queue = []
